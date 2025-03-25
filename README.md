@@ -118,7 +118,11 @@ ________________________________________________________________________________
  
    - Làm tương tự với các bảng __GVCN__, __LopSV__, __BoMon__, __LopHP__, __DKMH__.
 
-## 4. Chuyển các thao tác đồ hoạ trên thành lệnh SQL tương đương.
+## 6. Thiết lập ràng buộc kiểm tra (CK) 
+
+   - Thiết lập ràng buộc kiểm tra *(CK)* để giới hạn giá trị có thể nhập vào một cột.
+
+## 7. Chuyển các thao tác đồ hoạ trên thành lệnh SQL tương đương.
 
    - Click chuột phải vào file database __QLSV__ chọn __Tasks__ --> __Generte Scripts..__ để tạo các tập lệnh.
            
