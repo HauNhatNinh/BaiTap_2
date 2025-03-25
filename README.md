@@ -44,24 +44,28 @@
 3. Bài làm phải có dấu ấn cá nhân (hãy sáng tạo và biết cách bảo vệ mình nếu bạn là bản chính)
 4. Kết quả AI phải phù hợp với yêu cầu, nếu quá sai lệch <=> sv ko đọc => Cấm thi
 5. Nên nhớ: cấm thi là ko có vùng cấm và thầy chưa bao giờ nói đùa về việc cấm thi.
-
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
 ##                                    BÀI LÀM
-## Tạo database mới:
- 1. Ở phần __Object Explorer__, click nút chuột phải vào tệp __Databases__ rồi chọn __New Database...__ để tạo 1 cơ sử dữ liệu mới.
+ 
+ ## 1. Tạo database mới.
+  
+   - Ở phần __Object Explorer__, click nút chuột phải vào tệp __Databases__ rồi chọn __New Database...__ để tạo 1 cơ sử dữ liệu mới.
 
   ![Screenshot (108)](https://github.com/user-attachments/assets/7159230d-55b1-44fd-b437-025fc26f49a6)
 
 
- 2. Đăt tên cho database và thiết lập nơi lưu file.
+ ## 2. Đăt tên cho database và thiết lập nơi lưu file.
 
   ![Screenshot (109)](https://github.com/user-attachments/assets/176d5258-33ce-447c-9e11-3b85e20c28a1)
  
- 3. Tạo bảng dữ liệu mới bằng cách bấm dấu __+__ ở database __QLSV__ vừa tạo sau đó click chuột phải vào __Tables__ chọn __New__ --> __Table...__
+ ## 3. Tạo bảng dữ liệu mới
+
+   - Click vào dấu __+__ ở database __QLSV__ vừa tạo sau đó click chuột phải vào __Tables__ chọn __New__ --> __Table...__
 
   ![Screenshot (110)](https://github.com/user-attachments/assets/542deeb9-5ca9-417a-9722-b084c1b240e0)
 
- 4. Thiết lập các thông tin vào bảng như tên cột kiểu dữ liệu...
-    
+
+ ## 4. Thiết lập các thông tin vào bảng như tên cột kiểu dữ liệu...   
   ![Screenshot (111)](https://github.com/user-attachments/assets/f3e528e7-183c-48ac-8cfb-1de84b7662de)
 
    - Ở bài tập này chúng ta sẽ dùng một số kiểu dữ liệu như __nchar(n)__, __varchar(n)__, __nvarchar(n)__, __int__, __float__, __date__.
@@ -82,7 +86,9 @@
 
    - Tạo các bảng khác theo yêu cầu cầu đề bài, thiết lập các dữ kiện, kiểu dữ liệu và đặt khoá chính theo yêu cầu của đề bài cho các bảng còn lại.
 
- 5. Sau khi đã tạo các bảng và đặt khoá chính cho các bảng xong, ta tiến hành tạo khoá ngoại (__FK__) cho các bảng __GVCN__, __LopSV__, __GiaoVien__, __BoMon__, __LopHP__, __DKMN__. 
+ ## 5. Tạo khoá ngoại (FK)
+ 
+   - Sau khi đã tạo các bảng và đặt khoá chính cho các bảng xong, ta tiến hành tạo khoá ngoại (__FK__) cho các bảng __GVCN__, __LopSV__, __GiaoVien__, __BoMon__, __LopHP__, __DKMN__. 
 
    - Click chuột phải vào bảng *dbo.GiaoVien* vừa tạo trong file __Tables__ rồi nhấn __Design__ để truy cập vào bảng.
 
@@ -101,12 +107,42 @@
   ![Screenshot (126)](https://github.com/user-attachments/assets/f28ac7e7-7d23-4411-bad8-24b2f5440686)
      
    - Thay đổi bảng khoá chính, cột liên kết của bảng khoá chính và bảng khoá ngoại để liên kết dữ liệu giữa các bảng.
-       
+     - Bảng __GiaoVien__*(maGV, hoten, NgaySinh, maBM)*
+       - __FK__ *maBM* --> *BoMon(maBM)*: Đảm bảo giáo viên thuộc một bộ môn hợp lệ.
+       - Nếu không có __FK__: Có thể nhập *maBM* không tồn tại trong bảng *BoMon*, làm mất tính chính xác của dữ liệu.    
   ![Screenshot (127)](https://github.com/user-attachments/assets/015d5df9-7588-4779-adde-ab853fe11253)
-
   
+   - Hoàn tất quá trình tạo khoá ngoại cho bảng.
 
+  ![Screenshot (128)](https://github.com/user-attachments/assets/0de8e51b-e8ed-4023-b98f-7daf9e0fb9d3)
+ 
+   - Làm tương tự với các bảng __GVCN__, __LopSV__, __BoMon__, __LopHP__, __DKMH__.
 
+## 4. Chuyển các thao tác đồ hoạ trên thành lệnh SQL tương đương.
 
+   - Click chuột phải vào file database __QLSV__ chọn __Tasks__ --> __Generte Scripts..__ để tạo các tập lệnh.
+           
+  ![Screenshot (138)](https://github.com/user-attachments/assets/d8b9edb5-166f-4dc3-8ef6-fcd6b2b18f6f)
+
+   - Click __Next__ qua phần hướng dẫn tạo tập lệnh.
+
+  ![Screenshot (139)](https://github.com/user-attachments/assets/cdd82891-710f-4d4a-a54c-3932cc6d7907)
+   
+   - Tích vào phần __Select specific database objects__ chọn các đối tượng cụ thể để tạo scripts.
+
+  ![Screenshot (141)](https://github.com/user-attachments/assets/a46a0ef4-5d5e-4922-b07b-52f780d56e90)
+   
+   - Chọn lưu dưới dạng file script và nơi lưu file.
+
+  ![Screenshot (142)](https://github.com/user-attachments/assets/1959bbb1-cfe2-4414-9695-4a6a9da29585)
+    
+   - Nhìn lại các lựa chọn vừa thực hiện.
+
+  ![Screenshot (143)](https://github.com/user-attachments/assets/1dee6fc4-56d9-4a1c-ac72-a0613c199849)
+    
+   - Click __Finish__ để hoàn tất quá tình xuất file script.
+
+  ![Screenshot (144)](https://github.com/user-attachments/assets/5712642a-0cbd-4a30-baaa-e4e6a2dea39c)
+    
 
     
