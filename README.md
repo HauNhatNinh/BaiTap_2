@@ -92,8 +92,14 @@
 
   ![Screenshot (124)](https://github.com/user-attachments/assets/f46b6372-4ef0-40b1-b24f-da2f6ad0660c)
 
-  
-      
+   - Nhấn __Add__ để thêm mối quan hệ làm khoá ngoại.
+
+  ![Screenshot (125)](https://github.com/user-attachments/assets/0f7237d9-14da-4e9a-8ace-aad8101b67b2)
+   
+   - Tại phần __Tables And Columns Spec__, click vào __...__ để thiết lập mối quan hệ.
+
+  ![Screenshot (126)](https://github.com/user-attachments/assets/f28ac7e7-7d23-4411-bad8-24b2f5440686)
+     
          
   
   
