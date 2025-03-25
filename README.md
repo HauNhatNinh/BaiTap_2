@@ -122,6 +122,14 @@ ________________________________________________________________________________
 
    - Thiết lập ràng buộc kiểm tra *(CK)* để giới hạn giá trị có thể nhập vào một cột.
 
+  ![Screenshot (149)](https://github.com/user-attachments/assets/2941f381-31b5-4d77-bb90-c07f3bee1d17)
+
+   - Nhập điều kiện kiển tra và đổi tên ràng buộc sau đó nhấn __Close__ và __Save__ để lưu lại.
+
+  ![Screenshot (152)](https://github.com/user-attachments/assets/a0586289-28ae-4b00-ab10-d9f0ab9ffc28)
+
+   - Làm tương tự với các cột khác còn lại trong bảng __DKMH__ và một số bảng khác nếu cần.  
+
 ## 7. Chuyển các thao tác đồ hoạ trên thành lệnh SQL tương đương.
 
    - Click chuột phải vào file database __QLSV__ chọn __Tasks__ --> __Generte Scripts..__ để tạo các tập lệnh.
