@@ -100,8 +100,10 @@
 
   ![Screenshot (126)](https://github.com/user-attachments/assets/f28ac7e7-7d23-4411-bad8-24b2f5440686)
      
-         
-  
+   - Thay đổi bảng khoá chính, cột liên kết của bảng khoá chính và bảng khoá ngoại để liên kết dữ liệu giữa các bảng.
+       
+  ![Screenshot (127)](https://github.com/user-attachments/assets/015d5df9-7588-4779-adde-ab853fe11253)
+
   
 
 
