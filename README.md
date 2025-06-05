@@ -88,7 +88,7 @@ ________________________________________________________________________________
 
  ## 5. Tạo khoá ngoại (FK)
  
-   - Sau khi đã tạo các bảng và đặt khoá chính cho các bảng xong, ta tiến hành tạo khoá ngoại (__FK__) cho các bảng __GVCN__, __LopSV__, __GiaoVien__, __BoMon__, __LopHP__, __DKMN__. 
+   - Sau khi đã tạo các bảng và đặt khoá chính cho các bảng xong, ta tiến hành tạo khoá ngoại (__FK__) cho các bảng __GVCN__, __LopSV__, __GiaoVien__, __BoMon__, __LopHP__, __DKMH__. 
 
    - Click chuột phải vào bảng *dbo.GiaoVien* vừa tạo trong file __Tables__ rồi nhấn __Design__ để truy cập vào bảng.
 
